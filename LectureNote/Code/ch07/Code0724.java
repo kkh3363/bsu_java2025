@@ -23,11 +23,15 @@ class Student {
     public int getTotalScore(){
         return eng + math + sci;
     }
+    public double getAverageScore(){
+        return getTotalScore() / 3.0;
+    }
 }
 public class Code0724 {
     public static void main(String[] args) {
         Student s1 = new Student("james",80,  90, 50);
         System.out.println(s1.getName() +" total score is " + s1.getTotalScore());
+        System.out.println(s1.getName() +" Average score is " + s1.getAverageScore());
 
     }
 
